@@ -9,7 +9,7 @@
     <link href="<c:url value='/template/css/style.css' />" type="text/css" rel="stylesheet" />
     <link href="<c:url value='/template/vendor/all.min.css' />" rel="stylesheet" />
     <link rel="stylesheet" href="<c:url value='/template/vendor/bootstrap.min.css' />" >
-    
+    <script src="<c:url value='/template/vendor/jquery-3.5.1.min.js' />"></script>
 </head>
 <body>
 	<!-- header -->
@@ -21,6 +21,7 @@
 	<!-- footer -->
 	<%@ include file="/common/footer.jsp" %>
 	<!-- footer -->
+	
 	
 	<script src="<c:url value='/template/vendor/bootstrap.min.js' />" ></script>
     <script src="<c:url value='/template/vendor/all.min.js' />"></script>

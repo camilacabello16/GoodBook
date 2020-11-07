@@ -7,6 +7,7 @@ public class AbstractModel<T> {
 	private Long id;
 	private long[] ids;
 	private List<T> listResult = new ArrayList<>();
+	private String type = "list";
 
 	public Long getId() {
 		return id;
@@ -30,6 +31,14 @@ public class AbstractModel<T> {
 
 	public void setListResult(List<T> listResult) {
 		this.listResult = listResult;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

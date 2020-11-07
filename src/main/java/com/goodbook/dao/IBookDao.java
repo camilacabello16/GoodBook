@@ -17,4 +17,5 @@ public interface IBookDao extends GenericDao<BookModel> {
 
 	List<BookModel> findAll();
 
+	List<BookModel> findBook(String nameFind);
 }

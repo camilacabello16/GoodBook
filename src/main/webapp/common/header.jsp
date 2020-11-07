@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="/common/taglib.jsp" %>
+
 <header>
 	<div class="wp-menu-header">
 		<div class="container">
@@ -15,9 +18,23 @@
 				<div class="col-8">
 					<div class="wp-menu">
 						<ul class="menu-list">
-							<li class="menu-item"><a href="">Home</a></li>
-							<li class="menu-item"><a href="">List Book</a></li>
-							<li class="menu-item"><a href="">Log in</a></li>
+							<li class="menu-item"><a href="<c:url value='/trang-chu'/>">Home</a></li>
+							<c:if test="${not empty USERMODEL }">
+								<li class="menu-item"><a href="<c:url value='/danh-sach'/>">List Book</a></li>
+							</c:if>
+							<c:if test="${not empty USERMODEL }">
+								<li class="menu-item">
+									<a href="#">Welcome, ${USERMODEL.fullName}</a>
+								</li>
+								<li class="menu-item">
+									<a href="<c:url value='/thoat?action=logout'/>">Logout</a>
+								</li>
+							</c:if>
+							<c:if test="${empty USERMODEL }">
+								<li class="menu-item">
+									<a href="<c:url value='/dang-nhap?action=login'/>">Log in</a>
+								</li>
+							</c:if> 
 						</ul>
 					</div>
 				</div>

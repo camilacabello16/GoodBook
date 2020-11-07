@@ -22,6 +22,7 @@
 	<%@ include file="/common/footer.jsp" %>
 	<!-- footer -->
 
+	<script src="<c:url value='/template/vendor/jquery-3.5.1.min.js' />"></script>
 	<script src="<c:url value='/template/vendor/bootstrap.min.js' />"></script>
     <script src="<c:url value='/template/vendor/all.min.js' />"></script>
 </body>

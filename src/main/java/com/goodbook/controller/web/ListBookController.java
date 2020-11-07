@@ -35,6 +35,14 @@ public class ListBookController extends HttpServlet {
 		
 		cateModel.setListResult(categoryService.findAll());
 		req.setAttribute("categories", cateModel);
+		
+		//test find
+//		String nameFind = req.getParameter("findValue");
+//		
+//		bookModel.setListResult(bookService.findBook(nameFind));
+//		req.setAttribute("books", bookModel);
+		
+		//---------------
 		RequestDispatcher rd = req.getRequestDispatcher("/views/web/listbook.jsp");
 		rd.forward(req, resp);
 	}

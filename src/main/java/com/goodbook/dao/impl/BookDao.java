@@ -43,8 +43,14 @@ public class BookDao extends AbstractDao<BookModel> implements IBookDao {
 
 	@Override
 	public List<BookModel> findAll() {
-		String sql = "SELECT * FROM book";
+		String sql = "select * from find_all_book";
 		return query(sql, new BookMapper());
+	}
+
+	@Override
+	public List<BookModel> findBook(String nameFind) {
+		String sql = "SELECT * FROM book WHERE name LIKE '%?%'";
+		return query(sql, new BookMapper(), nameFind);
 	}
 
 }

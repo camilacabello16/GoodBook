@@ -528,7 +528,7 @@ a:hover{
 }
 .wp-list-book {
     background-color: #fff;
-    width: 80%;
+    width: 95%;
     border-radius: 5px;
     margin: auto;
     margin-top: 40px;
@@ -591,3 +591,48 @@ a:hover{
     display: flex;
 }
 
+/* EDIT PAGE */
+.wp-edit-page {
+    margin: 48px 0;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+}
+.form-edit {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 85px;
+}
+.input-edit input {
+    width: 80%;
+    outline: none;
+    padding: 6px 8px;
+}
+.input-edit {
+    flex: 1;
+}
+.input-edit textarea {
+    width: 80%;
+    outline: none;
+    padding: 6px 8px;
+}
+.input-select {
+    padding: 6px 8px;
+    background-color: #fff;
+    outline: none;
+}
+.title-edit {
+    font-size: 40px;
+    font-weight: bold;
+}
+.btn-update-book {
+    margin-top: 20px;
+    font-size: 18px;
+}

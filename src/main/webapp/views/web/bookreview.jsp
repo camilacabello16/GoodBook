@@ -16,24 +16,23 @@
                         <div class="wp-review-book">
                             <div class="book-review">
                                 <div class="img-book">
-                                    <img src="<c:url value='/template/image/book1.png' />">
+                                    <img src="<c:url value='${bookItem.image }' />">
                                 </div>
                                 <div class="name-book">
                                     <div class="name-book--title">
-                                        <p>36 Lời Khuyên Dành Cho Người Khởi Nghiệp</p>
+                                        <p>${bookItem.name}</p>
                                     </div>
-                                    <div class="name-book-content">
+                                    <!--  <div class="name-book-content">
                                         <p>Người ta hay ví việc kinh doanh với con thuyền ra khơi mà trên đó cánh buồm tượng trưng cho động lực. Và cuốn sách 36 lời khuyên dành cho người khởi nghiệp sẽ tạo động lực giương buồm cho con thuyền của bạn vững vàng ra khơi. Được viết bằng ngôn ngữ rõ ràng, sinh động, cách trình bày dễ đọc và dễ hiểu, cuốn sách đã cung cấp một cái nhìn cụ thể và mới mẻ về những giai đoạn khác nhau trong quá trình khởi nghiệp, giúp bạn đọc có thêm nhiều kinh nghiệm thực tế hữu ích.</p>
-                                    </div>
+                                    </div> -->
                                     <div class="name-book--cate">
-                                        <p>Danh mục: <a href="">All</a></p>
+                                        <p>Danh mục: <a href="#">${bookItem.categoryId}</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="review-book">
                                 <div class="review-book--txt">
-                                    <p>Cuốn sách đưa ra những lời khuyên liên quan đến cách thức tổ chức xây dựng công ty, phương pháp khởi nghiệp cho đến vấn đề quản lý, nghiệp vụ, tư bản…nhằm giúp người khởi nghiệp có những định hướng đúng đắn và thẳng tiến thành công. Ngoài đưa ra những lời khuyên cụ thể, Tôn Đào Nhiên còn lồng ghép vào đó những câu chuyện điển hình được đúc kết từ thực tế 20 năm tự mình khởi nghiệp. Đó là sự hòa trộn những tri thức quản lý kinh tế học được học ở đại học và kinh nghiệm thực tế của bản thân ông, trong đó cũng dung hợp với sự lĩnh hội văn hóa của Lenovo và ba yếu tố quản lý của Liễu Truyền Chí.</p>
-                                    <p>Người ta hay ví việc kinh doanh với con thuyền ra khơi mà trên đó cánh buồm tượng trưng cho động lực. Và cuốn sách 36 lời khuyên dành cho người khởi nghiệp sẽ tạo động lực giương buồm cho con thuyền của bạn vững vàng ra khơi. Được viết bằng ngôn ngữ rõ ràng, sinh động, cách trình bày dễ đọc và dễ hiểu, cuốn sách đã cung cấp một cái nhìn cụ thể và mới mẻ về những giai đoạn khác nhau trong quá trình khởi nghiệp, giúp bạn đọc có thêm nhiều kinh nghiệm thực tế hữu ích.</p>
+                                    <p>${bookItem.description }</p>
                                 </div>
                                 <div class="review-book--cmt">
                                     <div class="cmt-user">
@@ -75,11 +74,21 @@
                                 <div class="list-book-item">
                                     <div class="book-item--img">
                                         <a href="" class="book-item--link">
-                                            <img src="<c:url value='/template/image/sach-nua-doi-con-lai.jpg' />">
+                                            <img src="<c:url value='/template/image/demen.jpg' />">
                                         </a>
                                     </div>
                                     <div class="book-item--name">
-                                        <a href="">Nửa Đời Còn Lại</a>
+                                        <a href="">Dế mèn phiêu lưu ký</a>
+                                    </div>
+                                </div>
+                                <div class="list-book-item">
+                                    <div class="book-item--img">
+                                        <a href="" class="book-item--link">
+                                            <img src="<c:url value='/template/image/toithayhoavang.jpg' />">
+                                        </a>
+                                    </div>
+                                    <div class="book-item--name">
+                                        <a href="">Tôi thấy hoa vàng trên cỏ xanh</a>
                                     </div>
                                 </div>
                                 <div class="list-book-item">
@@ -95,21 +104,11 @@
                                 <div class="list-book-item">
                                     <div class="book-item--img">
                                         <a href="" class="book-item--link">
-                                            <img src="<c:url value='/template/image/sach-nua-doi-con-lai.jpg' />">
+                                            <img src="<c:url value='/template/image/truyenkieu.jpg' />">
                                         </a>
                                     </div>
                                     <div class="book-item--name">
-                                        <a href="">Nửa Đời Còn Lại</a>
-                                    </div>
-                                </div>
-                                <div class="list-book-item">
-                                    <div class="book-item--img">
-                                        <a href="" class="book-item--link">
-                                            <img src="<c:url value='/template/image/sach-nua-doi-con-lai.jpg' />">
-                                        </a>
-                                    </div>
-                                    <div class="book-item--name">
-                                        <a href="">Nửa Đời Còn Lại</a>
+                                        <a href="">Truyện Kiều</a>
                                     </div>
                                 </div>
                             </div>

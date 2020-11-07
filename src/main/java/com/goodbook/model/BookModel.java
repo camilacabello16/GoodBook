@@ -7,7 +7,7 @@ public class BookModel extends AbstractModel<BookModel> {
 	private String image;
 	private int rating;
 	private Long authorId;
-	//private String cateName;
+	private String categoryCode;
 	public String getName() {
 		return name;
 	}
@@ -51,5 +51,11 @@ public class BookModel extends AbstractModel<BookModel> {
 //	public void setCateName(String cateName) {
 //		this.cateName = cateName;
 //	}
+	public String getCategoryCode() {
+		return categoryCode;
+	}
+	public void setCategoryCode(String categoryCode) {
+		this.categoryCode = categoryCode;
+	}
 
 }

@@ -10,4 +10,6 @@ public interface IBookService {
 	BookModel update(BookModel updateBook);
 	void delete(long[] ids);
 	List<BookModel> findAll();
+	BookModel findOne(Long id);
+	List<BookModel> findBook(String nameFind);
 }
