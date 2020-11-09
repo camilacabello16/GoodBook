@@ -43,7 +43,7 @@ public class BookDao extends AbstractDao<BookModel> implements IBookDao {
 
 	@Override
 	public List<BookModel> findAll() {
-		String sql = "select * from find_all_book";
+		String sql = "select * from book";
 		return query(sql, new BookMapper());
 	}
 
